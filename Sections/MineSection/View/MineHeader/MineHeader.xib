@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="UlG-9r-YPd" customClass="MineHeader">
+            <rect key="frame" x="0.0" y="0.0" width="583" height="215"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="doc-gH-WTM">
+                    <rect key="frame" x="0.0" y="0.0" width="583" height="205"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mac" translatesAutoresizingMaskIntoConstraints="NO" id="Yen-N9-dbl">
+                            <rect key="frame" x="0.0" y="0.0" width="583" height="170"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="170" id="4t4-MI-RZ8"/>
+                            </constraints>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Asy-Ip-WiC">
+                            <rect key="frame" x="0.0" y="170" width="583" height="35"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Yen-N9-dbl" firstAttribute="leading" secondItem="doc-gH-WTM" secondAttribute="leading" id="42w-G1-YnP"/>
+                        <constraint firstItem="Yen-N9-dbl" firstAttribute="top" secondItem="doc-gH-WTM" secondAttribute="top" id="JLq-25-NZR"/>
+                        <constraint firstAttribute="trailing" secondItem="Asy-Ip-WiC" secondAttribute="trailing" id="QuV-Gy-DCn"/>
+                        <constraint firstAttribute="trailing" secondItem="Yen-N9-dbl" secondAttribute="trailing" id="Wqq-AI-7zj"/>
+                        <constraint firstItem="Asy-Ip-WiC" firstAttribute="leading" secondItem="doc-gH-WTM" secondAttribute="leading" id="Y8l-4Y-iyb"/>
+                        <constraint firstAttribute="bottom" secondItem="Asy-Ip-WiC" secondAttribute="bottom" id="ba2-k0-LkS"/>
+                        <constraint firstItem="Asy-Ip-WiC" firstAttribute="top" secondItem="Yen-N9-dbl" secondAttribute="bottom" id="gUS-c1-u4J"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.85199652780000001" green="0.85199652780000001" blue="0.85199652780000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="doc-gH-WTM" firstAttribute="top" secondItem="UlG-9r-YPd" secondAttribute="top" id="BUH-KL-N33"/>
+                <constraint firstAttribute="baseline" secondItem="doc-gH-WTM" secondAttribute="bottom" constant="10" id="JRL-2t-QvI"/>
+                <constraint firstItem="doc-gH-WTM" firstAttribute="leading" secondItem="UlG-9r-YPd" secondAttribute="leading" id="JiZ-yL-mlK"/>
+                <constraint firstAttribute="trailing" secondItem="doc-gH-WTM" secondAttribute="trailing" id="gDZ-g9-qdd"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="headerH" destination="4t4-MI-RZ8" id="geN-6S-EEO"/>
+                <outlet property="iconView" destination="Asy-Ip-WiC" id="hre-L5-jTK"/>
+            </connections>
+            <point key="canvasLocation" x="-100.5" y="-125.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="mac" width="16" height="16"/>
+    </resources>
+</document>
